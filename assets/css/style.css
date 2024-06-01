@@ -89,6 +89,31 @@ Version: 2.0.0
   src: url("../fonts/source-sans-pro-v21-latin/source-sans-pro-v21-latin-700.woff2") format("woff2");
 }
 
+#cookieConsent {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #2b2b2b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+#cookieConsent a {
+    color: #f1d600;
+}
+
+#cookieConsent button {
+    background: #f1d600;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
 @font-face {
     font-family: "Montserrat";
   font-style: normal;

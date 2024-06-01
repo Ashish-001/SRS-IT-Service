@@ -531,6 +531,13 @@
 </footer><!-- End footer -->
 
 	</main><!-- End main -->
+	<div id="cookieConsent" style="display: none; position: fixed; bottom: 0; width: 100%; background: #2b2b2b; color: white; text-align: center; padding: 15px; z-index: 1000;">
+		<p>We use cookies to ensure you get the best experience on our website. 
+			<a href="privacy-policy.html" style="color: #f1d600;">Learn more</a>
+			<button id="acceptCookies" style="background: #f1d600; border: none; padding: 10px 20px; margin-left: 10px; cursor: pointer;">Accept</button>
+		</p>
+	</div>
+	
 
 	<script src="assets/libs/jquery/jquery.min.js"></script>
 <script src="assets/libs/lozad/lozad.min.js"></script>
@@ -539,5 +546,17 @@
 <script src="assets/libs/pristine/pristine.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/forms.js"></script>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		document.getElementById("cookieConsent").style.display = "block";
+	
+		document.getElementById("acceptCookies").addEventListener("click", function() {
+			document.getElementById("cookieConsent").style.display = "none";
+		});
+	});
+	</script>
+	
+	
 	
 </body></html>
